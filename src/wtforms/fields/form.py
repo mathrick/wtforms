@@ -48,8 +48,8 @@ class FormField(Field):
                 data = self.default()
             except TypeError:
                 data = self.default
-            self._obj = data
 
+        self._obj = data
         self.object_data = data
 
         prefix = self.name + self.separator
